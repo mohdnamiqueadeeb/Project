@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
+        </style>
+    <title> RedStore </title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt=" Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>We Delever Fast!</h1>
+                    <a href="" class="btn">Shop Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="{% static 'images/header.jpg' %}">
+                </div>
+            </div>   
+        </div>
+    </div>
+
+
+    <!----------------Our Product------------------->
+    <div class="small-container">
+        <h2>Our Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'images/product1.jpg' %}" alt="">
+                <h4>Milk</h4>
+                <p>Rs-70/Kg</p>
+                <a href="" class="btn">Shop Now &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="{% static 'images/product2.jpg' %}" alt="">
+                <h4>Flour</h4>
+                <p>Rs 700</p>
+                <a href="" class="btn">Shop Now &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="{% static 'images/product3.jpg' %}" alt="">
+                <h4>Milk</h4>
+                <p>Rs - 70/kg</p>
+                <a href="" class="btn">Shop Now &#8594;</a>
+            </div>
+
+            <div class="col-4">
+                <img src="{% static 'images/product4.jpg' %}" alt="">
+                <h4>Tea</h4>
+                <p>Rs - 200</p>
+                <a href="" class="btn">Shop Now &#8594;</a>
+            </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>

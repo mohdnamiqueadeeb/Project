@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container mt-5 pt-5">
+        <h3 class="text-center">Register</h3>
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="form-group col-12">
+                    <input type="text" name="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <input type="text" name="email" class="form-control" placeholder="Mobile Number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <input type="text" name="pass" class="form-control" placeholder="Password">
+                </div>
+            </div>
+
+            <p>Already Have Account <a href="{% url 'login %'}">Login</a></p>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+<script src="{% static 'css/bootstrap.js' %}"></script>
+</body>
+</html>
