@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Record</title>
+</head>
+<body>
+    <h2>Please Add Record</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label> Name</label>
+        <div><input type="text" name="name" placeholder="Enter Name"></div>
+        <label>Salary</label>
+        <div><input type="number" name="salary" placeholder="Enter Salary"></div>
+        <label>Designation</label>
+        <div><input type="text" name="designation" placeholder="Enter Name"></div>
+        <label>City</label>
+        <div><input type="text" name="city" placeholder="Enter City"></div>
+        <label>State</label>
+        <div><input type="text" name="state" placeholder="Enter state"></div>
+
+        <label>Country</label>
+        <div><input type="text" name="country" placeholder="Enter country"></div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>

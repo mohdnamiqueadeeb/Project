@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h2>Edit Record</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label> Name</label>
+        <div><input type="text" name="name" value="{{Data.name}}"></div>
+        <label>Salary</label>
+        <div><input type="number" name="salary" value="{{Data.salary}}"></div>
+        <label>Designation</label>
+        <div><input type="text" name="designation" value="{{Data.designation}}"></div>
+        <label>City</label>
+        <div><input type="text" name="city" value="{{Data.city}}"></div>
+        <label>State</label>
+        <div><input type="text" name="state" value="{{Data.state}}"></div>
+        <label>Country</label>
+        <div><input type="text" name="country" value="{{Data.country}}"></div>
+        <button type="submit">Edit Record</button>
+
+    </form>
+</body>
+</html>
